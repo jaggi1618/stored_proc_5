@@ -1,0 +1,100 @@
+fileVersion: 1
+id: 8b63fa38-b4c2-4e52-9538-560f01ef8676
+name: V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 939251ae-35f8-4bc8-b4cb-b26a281e4b91
+          stepCounter: 8b63fa38-b4c2-4e52-9538-560f01ef8676
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIQCUSTOMFORMMAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de27656a-89f5-4d30-a627-404400a67204
+                stepCounter: cbd097d6-ebad-4f2f-9c6e-3dad07a3ed3d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ebe542a-253a-450e-b8aa-26e3e3a1eb9f
+          stepCounter: 8b63fa38-b4c2-4e52-9538-560f01ef8676
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 637511e9-d520-4a59-997c-4f4a0590da74
+                stepCounter: 6fd20850-31c5-4e01-b3dc-59c9d22b6baf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82a7263a-8474-48fc-ae99-88c6d81f0dee
+          stepCounter: 8b63fa38-b4c2-4e52-9538-560f01ef8676
+        config: {}
+        dataType: STRING
+        description: ""
+        name: FIELD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7bd33272-208a-474d-8a01-9d33ae2753e3
+                stepCounter: 6fd20850-31c5-4e01-b3dc-59c9d22b6baf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4595e387-d7e0-4ab6-956e-c365ee7fae60
+          stepCounter: 8b63fa38-b4c2-4e52-9538-560f01ef8676
+        config: {}
+        dataType: STRING
+        description: ""
+        name: FIELD_DATA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 27961327-4022-4729-875d-73b746282877
+                stepCounter: 6fd20850-31c5-4e01-b3dc-59c9d22b6baf
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP: cbd097d6-ebad-4f2f-9c6e-3dad07a3ed3d
+          TMP_SCREEN_DATA: 6fd20850-31c5-4e01-b3dc-59c9d22b6baf
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP
+          - locationName: TARGET
+            nodeName: TMP_SCREEN_DATA
+        join:
+          joinCondition: |
+            FROM {{ ref('SRC', 'DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP') }} "DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP"
+            INNER JOIN {{ ref('TARGET', 'TMP_SCREEN_DATA') }} "TMP_SCREEN_DATA"
+                ON DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP.UNIQCUSTOMFORMMAP = TMP_SCREEN_DATA.UNIQCUSTOMFORMMAP
+                AND DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP.FIELD_ID = TMP_SCREEN_DATA.FIELD_ID
+        name: V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA
+        noLinkRefs: []
+  name: V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

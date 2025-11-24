@@ -1,0 +1,262 @@
+fileVersion: 1
+id: 7f043b7e-76fc-4506-a36d-753d636a6c51
+name: PVT_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA1
+operation:
+  config:
+    Colvol1: |-
+      'a639a20a-c8b5-4ea3-98ea-caa44412e868',
+      '6266a25d-b40a-4773-9d06-7320f2e062e8',
+      '3140e218-8fe7-485f-af2a-d68c1d5a46c1',
+      'cf986cc2-6a02-4a89-a402-80e63cd42258',
+      '8dcbc851-c0e4-4107-8b2f-000e6c4d5b74',
+      '5fdcd049-021b-44d2-b6e6-c273631b865d',
+      'e261a65a-edcc-4a63-a9ff-91fba70b01e4',
+      '9f744942-4165-458a-a4b2-9f87448ba28d'
+    aggfunc:
+      items:
+        - {}
+    aggfunc1:
+      items:
+        - funcname1: MAX
+    defaultval: ""
+    defvalue: false
+    excolval: false
+    exlcol:
+      items:
+        - {}
+    inferPivot: false
+    samKeyColval: false
+    sincol: true
+    subqueryval1: ""
+    tabKeyColumn:
+      items:
+        - keyColTextBox: FIELD_ID
+    tabValueColumn:
+      items:
+        - valColTextBox: FIELD_DATA
+    testsEnabled: false
+    trunc: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4ad3fd7-fbb4-4e2c-9d75-1883cef2aefd
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: UNIQCUSTOMFORMMAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23b83c7d-29b2-4b06-8d91-446000514686
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ebe542a-253a-450e-b8aa-26e3e3a1eb9f
+                stepCounter: 8b63fa38-b4c2-4e52-9538-560f01ef8676
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29f36397-b6dc-46a9-bc3e-d20a06308b69
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PRIMARY_LIMIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1316c39-c026-46be-ab29-18283501482e
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PRIMARY_PREMIUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5721803-1052-470c-8924-1908477df114
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PRIMARY_SIR_RETENTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff125c03-3886-49eb-a25b-2c2f8442b09c
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PRIMARY_ICO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f58e7e6-dcee-4a7d-ba01-bfeef61cf4b6
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AGGREGATE_LIMIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea54ba85-1d4c-4418-9608-164a9c9febea
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AGGREGATE_PREMIUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 070f0d77-fe60-4973-8213-1380908c5d41
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AGGREGATE_SIR_RETENTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8dc4a574-842d-48c6-a1cd-aa501277abae
+          stepCounter: 7f043b7e-76fc-4506-a36d-753d636a6c51
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AGGREGATE_ICO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA: 8b63fa38-b4c2-4e52-9538-560f01ef8676
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA
+        join:
+          joinCondition: FROM {{ ref('TARGET', 'V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA') }} "V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA"
+        name: PVT_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA1
+        noLinkRefs: []
+  name: PVT_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA1
+  overrideSQL: false
+  schema: ""
+  sqlType: PIVOT:::409
+  type: sql
+  version: 1
+type: Node

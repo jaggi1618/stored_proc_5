@@ -1,0 +1,197 @@
+fileVersion: 1
+id: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+name: V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA3
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31f46d11-ab96-4e5f-b406-75b385e89949
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIQCUSTOMFORMMAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac7b32af-84df-4a36-9c75-45118e212e74
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c40cd34c-5a9e-4812-8b78-db5c63ada483
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PROGRAM_TYPE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'professional_liability_package'"
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a506b9f-b556-4b6d-b936-bf7d2459b675
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 689ba9e5-3d9c-4c7d-9117-8c70baedf39a
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01c62438-29ac-4337-8acb-af6572281322
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRIMARY_LIMIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b87e036-254c-49ff-9ec9-5d466669fdb1
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f56bb798-7e24-4341-b84c-1c23a9363cb5
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PRIMARY_PREMIUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59afe00d-64a7-450d-80e6-4188acb8ede5
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34fef761-1550-42fd-954d-c51b285db4e5
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRIMARY_SIR_RETENTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 70590e0b-e4fd-4cb9-89b4-0480ad206d29
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 15e68b77-fc55-4788-a3af-af4e5b8ef301
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PRIMARY_ICO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7c3994a-9d91-4c48-96ac-b57d92a3d7d8
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b63b6145-e10d-4431-8491-2a0dc86110de
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGGREGATE_LIMIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2a923927-3136-4e7b-b29e-8b8d6711982b
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e81a16b7-ab0b-46a5-8a4b-02cb644f0bdf
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: AGGREGATE_PREMIUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba07511d-f4ca-412e-9a18-a467aef80a39
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52a52edf-eedd-4e27-a2ad-526f5d884380
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AGGREGATE_SIR_RETENTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59a2bf66-774c-460e-9434-2180d43a0f25
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ee5a1eb-1e5e-4d66-8514-2a2c27ec0135
+          stepCounter: b9b6e6f7-838d-4e05-a03a-7f2419bbb009
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: AGGREGATE_ICO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 01b28797-665f-46ff-abe8-de8bf58a9bc8
+                stepCounter: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PVT_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA2: 1b70d4df-8b57-4163-b150-9fb1a58d9235
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: PVT_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA2
+        join:
+          joinCondition: FROM {{ ref('TARGET', 'PVT_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA2') }} "PVT_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA2"
+        name: V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA3
+        noLinkRefs: []
+  name: V_DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP_TMP_SCREEN_DATA3
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
