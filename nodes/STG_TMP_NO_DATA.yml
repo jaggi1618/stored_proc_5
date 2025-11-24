@@ -1,0 +1,91 @@
+fileVersion: 1
+id: 590029b9-d2d1-4a4a-a43b-285b7367c7e5
+name: STG_TMP_NO_DATA
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DBSHIFT
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b563f4a3-7182-4217-a065-9b936d5e7f1e
+          stepCounter: 590029b9-d2d1-4a4a-a43b-285b7367c7e5
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c0e96b3a-59d7-402a-a925-50280f2886f4
+                stepCounter: 56e89f6d-71b3-46c9-839e-4c57c433c2a3
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f317132a-dd02-401d-85f2-959c25605d3c
+          stepCounter: 590029b9-d2d1-4a4a-a43b-285b7367c7e5
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: PROGRAM_TYPE_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b563f4a3-7182-4217-a065-9b936d5e7f1e
+                stepCounter: 56e89f6d-71b3-46c9-839e-4c57c433c2a3
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_TMP_SCREEN_DATA_PVT: stg
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DBSHIFT
+            nodeName: STG_TMP_SCREEN_DATA_PVT
+        join:
+          joinCondition: |-
+            FROM {{ ref('DBSHIFT', 'STG_TMP_SCREEN_DATA_PVT') }} "stg"
+            WHERE PRIMARY_LIMIT IS NULL
+              AND PRIMARY_PREMIUM IS NULL
+              AND PRIMARY_SIR_RETENTION IS NULL
+              AND stg.PRIMARY_ICO IS NULL
+              AND AGGREGATE_LIMIT IS NULL
+              AND AGGREGATE_PREMIUM IS NULL
+              AND AGGREGATE_SIR_RETENTION IS NULL
+              AND stg.AGGREGATE_ICO IS NULL
+        name: STG_TMP_NO_DATA
+        noLinkRefs: []
+  name: STG_TMP_NO_DATA
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

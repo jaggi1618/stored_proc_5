@@ -1,0 +1,211 @@
+fileVersion: 1
+id: 504f291e-0d4d-4074-a09c-ff5950854d19
+name: STG_TMP_SCREEN_DATA
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DBSHIFT
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f2b604e-e177-4c07-9b2f-3d60a168603b
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d5e7d56-78b1-4876-b51c-431526f7a63d
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bb2f2c8-8fd3-47a3-ab39-2a951c38e9c6
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: UNIQENTITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 322c365a-0f81-4b35-8664-d4f1dd46f396
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d138d61-0731-417c-a496-c146430de8d2
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: UNIQPOLICY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f723469c-9c3f-427c-9b48-154df6782ca7
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c06f0e7a-96e0-47b2-a4f5-562860b84c7e
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 474c1065-22d7-4d92-a1f4-3d077c44e951
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3374495c-99c0-43a7-b286-63d12d0dd34d
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: POLICYNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 771343de-b895-4422-b52b-7c73a62dd599
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 429188d3-5242-4919-8667-f3c5f47d3e0b
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CDPOLICYLINETYPECODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf89f109-77f6-490c-994b-4a5727e0ac06
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1475c404-58a3-4eb0-8809-7b3b9b4de530
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: SCREENDATA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 976ac64d-5870-4f3b-81d3-cd725e2e8e3d
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74d8de0b-22c6-43c6-9407-11100f9509ec
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: UNIQCUSTOMFORMSCREEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a60835ff-723a-4933-911e-22485e985834
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 472559b1-de1a-4c28-be94-814ca52c0022
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: UNIQCUSTOMFORMMAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f269a83-a719-4b68-80f0-8c2020216110
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a67610fd-6f20-410a-9d90-3a87103a74ef
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LINETYPEUNIQCUSTOMFORMMAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0172e27-e818-4d51-a20c-c04d093375e2
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e5e679b-d72b-426c-859a-f320b3064d4b
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: FIELD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 976ac64d-5870-4f3b-81d3-cd725e2e8e3d
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: XMLGET(x.value, '@Name'):"$"::VARCHAR(255)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3a27a3d-4c36-407a-bc12-fd989b538e12
+          stepCounter: 504f291e-0d4d-4074-a09c-ff5950854d19
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: FIELD_DATA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 976ac64d-5870-4f3b-81d3-cd725e2e8e3d
+                stepCounter: 546f555e-4c33-4f93-ac1d-a36c927f9189
+            transform: NULLIF(LTRIM(XMLGET(x.value, '@Data'):"$"::VARCHAR), '')
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC: b
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DBSHIFT
+            nodeName: DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC
+        join:
+          joinCondition: |-
+            FROM {{ ref('DBSHIFT', 'DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC') }} b,
+                 LATERAL FLATTEN(INPUT => PARSE_XML(b.SCREENDATA), PATH => 'Data/NonScheduled/Field') x
+            WHERE b.CDPOLICYLINETYPECODE = '1CLI'
+        name: STG_TMP_SCREEN_DATA
+        noLinkRefs: []
+  name: STG_TMP_SCREEN_DATA
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,55 @@
+fileVersion: 1
+id: 5df9e45e-188b-4a55-8dd2-c9a33633e66f
+name: DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 494541cd-58a4-49ab-a1a6-0683a48e8945
+          stepCounter: 5df9e45e-188b-4a55-8dd2-c9a33633e66f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: UNIQCUSTOMFORMMAP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6b64f16-c0c2-4876-905a-27a3c3d5268c
+          stepCounter: 5df9e45e-188b-4a55-8dd2-c9a33633e66f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: FIELD_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_CLIENT_BENCHMARKING_CLIENT_POLICY_STAGING_EPIC_FORM_MAP
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
