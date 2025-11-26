@@ -127,8 +127,6 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          column
-yaml
           columnCounter: 2d3e33f0-4a87-4402-861f-61e967a57a5b
           stepCounter: 59388275-c580-4d57-8977-84f5016c6838
         config: {}
@@ -461,4 +459,5 @@ yaml
   sqlType: Stage
   type: sql
   version: 1
+
 type: Node
